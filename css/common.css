@@ -1,0 +1,93 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background: #41ac52;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn:disabled {
+    background: rgba(66, 189, 86, 0.5);
+    cursor: not-allowed;
+}
+
+/* Rating */
+
+.star .rating {
+    font-size: 12px;
+    margin-right: 7px;
+    color: #e09015;
+}
+
+.rating-bg {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background: url(../img/ic_rating_s.png) no-repeat left top/100%;
+}
+
+.rating50 {
+    background-position: 0 0;
+}
+
+.rating45 {
+    background-position: 0 -11px;
+}
+
+.rating40 {
+    background-position: 0 -22px;
+}
+
+.rating35 {
+    background-position: 0 -33px;
+}
+
+.rating30 {
+    background-position: 0 -44px;
+}
+
+.rating25 {
+    background-position: 0 -55px;
+}
+
+.rating20 {
+    background-position: 0 -66px;
+}
+
+.rating15 {
+    background-position: 0 -77px;
+}
+
+.rating10 {
+    background-position: 0 -88px;
+}
+
+.rating5 {
+    background-position: 0 -99px;
+}
+
+.rating0 {
+    background-position: 0 -110px;
+}

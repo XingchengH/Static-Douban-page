@@ -1,0 +1,993 @@
+/* Common style */
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    line-height: 2;
+}
+
+.section {
+    padding: 10px 0;
+}
+
+.section:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+.aside-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.aside-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+/* BFC box */
+.main {
+    overflow: hidden;
+}
+
+.adv img {
+    width: 100%;
+    display: block;
+}
+
+.section-title {
+    margin: 12px 0;
+}
+
+.section-title .title {
+    display: inline;
+    color: #072;
+    font-size: 15px;
+}
+
+.section-title .title::after {
+    content: " · · · · · · ";
+}
+
+.section-title .link {
+    font-size: 12px;
+}
+
+.section-title .link::before {
+    content: "(";
+}
+
+.section-title .link::after {
+    content: ")";
+}
+
+a {
+    color: #37a;
+}
+
+a:hover {
+    color: #fff;
+    background: #37a;
+}
+
+a:active {
+    color: #fff;
+    text-decoration: none;
+    background: #f93;
+}
+
+ul {
+    word-break: break-all;
+}
+
+.adv-tag::after {
+    content: "广告";
+    color: #c9c9c9;
+    font-size: 13px;
+}
+
+.light-grey {
+    color: #494949;
+}
+
+.aside-left .title {
+    font-size: 24px;
+}
+
+.item-list li {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.item-list li .img img {
+    width: 100%;
+    display: block;
+}
+
+.left-menu {
+    font-size: 14px;
+}
+
+.left-menu a.new {
+    position: relative;
+}
+
+.left-menu a.new::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    background: url(../img/new_menu.gif) no-repeat;
+}
+
+.right-menu-list {
+    font-size: 12px;
+}
+
+.right-menu-list li {
+    float: left;
+}
+
+.block-link {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.app-icon-1 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/app_icons_50_10.jpg) no-repeat;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.app-icon-2 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/app_icons_50_10.jpg) no-repeat;
+    background-position: -250px 0;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.app-icon-3 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/app_icons_50_10.jpg) no-repeat;
+    background-position: -50px 0;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+
+.menu-ad {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.group .group-name {
+    font-size: 14px;
+}
+
+.group .group-name a {
+    color: #333;
+}
+
+.group .group-name a::after {
+    content: "»"; 
+}
+
+.group .right-menu-list li {
+    margin-right: 10px;
+}
+
+
+/* Common style end */
+
+
+/* Header */
+
+.header {
+    height: 95px;
+    margin-bottom: 25px;
+}
+
+.header .flag {
+    height: 33px;
+    background: #EDF4EC;
+}
+
+.header .flag a {
+    display: inline-block;
+    width: 102px;
+    padding-top: 30px;
+    height: 0px;
+    margin: 7px 13px;
+    overflow: hidden;
+    background: url(../img/logo_db.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+.header .flag a span {
+    display: none;
+}
+
+.header .container {
+    margin-top: 30px;
+}
+
+.header .container .site-name,
+.header .container .menu,
+.header .container .search {
+    height: 30px;
+}
+
+.header .container .site-name {
+    width: 73px;
+    margin-right: 24px;
+    background: url(../img/sitename.png) no-repeat 0/0 100%;
+    background-size: contain;
+    text-indent: -999em;
+}
+
+.header .container .search .txt::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.header .container .search .txt::-moz-placeholder {
+    color: #ccc;
+}
+
+.header .container .search .txt:-ms-input-placeholder {
+    color: #ccc;
+}
+
+.header .container .search .txt::-ms-input-placeholder {
+    color: #ccc;
+}
+
+.header .container .search .txt::placeholder {
+    color: #ccc;
+}
+
+.header .container .search {
+    position: relative;
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    font-size: 13px;
+}
+
+.header .container .search .txt {
+    width: 240px;
+    height: 20px;
+    padding: 5px;
+}
+
+.header .container .search button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    color: #c3c3c3;
+}
+
+.header .container .menu {
+    margin-top: 4px;
+}
+
+.header .container .menu a {
+    display: inline-block;
+    background: url(../img/anony_nav_logo.png) no-repeat left top/463px 20px;
+    width: 40px;
+    height: 20px;
+    margin-left: 17px;
+}
+
+.header .container .menu .menu-read {
+    background-position: 0 0;
+}
+
+.header .container .menu .menu-movie {
+    background-position: -60px 0;
+}
+
+.header .container .menu .menu-music {
+    background-position: -120px 0;
+}
+
+.header .container .menu .menu-group {
+    background-position: -180px 0;
+}
+
+.header .container .menu .menu-city {
+    background-position: -240px 0;
+}
+
+.header .container .menu .menu-fm {
+    background-position: -300px 0;
+}
+
+.header .container .menu .menu-time {
+    background-position: -360px 0;
+}
+
+.header .container .menu .menu-doupin {
+    background-position: -420px 0;
+    width: 43px;
+}
+
+/* Header end */
+
+/* Banner */
+
+.banner {
+    min-width: 1437px;
+    height: 304px;
+    background: url(../img/banner.jpg) no-repeat 115px top/auto 100% #edf4ed;
+    margin-bottom: 25px;
+}
+
+.banner .container .loginArea {
+    width: 300px;
+    height: 300px;
+}
+
+.banner .container .slogan {
+    margin-top: 105px;
+    margin-right: 32px;
+}
+
+.banner .container .slogan .title {
+    font-size: 25px;
+    color: #111;
+}
+
+.banner .container .slogan .title span {
+    margin-left: 10px;
+}
+
+.banner .container .slogan .download {
+    margin-top: 20px;
+}
+
+.banner .container .slogan .download .btn {
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.banner .container .slogan .download .qrcode {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.banner .container .slogan .download .qrcode img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .container .qrcode-img {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.banner .container .qrcode-img p {
+    color: #666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.banner .container .slogan .download .qrcode:hover .qrcode-img {
+    display: block;
+}
+
+/* Banner end */
+
+/* ad */
+
+.section .adMusicRank {
+    padding: 10px 0;
+}
+
+.section .adMusicRank a:hover {
+    background: inherit;
+}
+
+.section .adMusicRank a img {
+    height: 90px;
+}
+
+/* ad end */
+
+
+/* Hot topic */
+
+.hot-list {
+    line-height: 1.5;
+}
+
+.hot-list li {
+    margin-bottom: 15px;
+}
+
+.hot-list li .title {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 240px;
+}
+
+.hot-list li .desc {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.hot-list li .desc span {
+    margin-right: 4px;
+}
+
+.hot-main .left {
+    width: 350px;
+}
+
+.hot-main .left ul {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.hot-main .left ul::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.hot-main .left li {
+    width: 170px;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.hot-main .left li .words span {
+    color: #999;
+}
+
+.hot-main .right {
+    width: 275px;
+    font-size: 12px;
+}
+
+.hot-main .right li {
+    margin-bottom: 12px;
+}
+
+.hot-main .right li .title {
+    color: #999;
+}
+
+.hot-main .right li .desc {
+    color: #666;
+}
+
+/* Hot topic end */
+
+/* Douban time */
+
+.time-main li {
+    width: 100px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.time-main li .words a {
+    color: #333333;
+}
+
+.time-main li .words a:hover {
+    color: #fff;
+}
+
+.time-main li .words span {
+    display: block;
+    color: #999999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Douban time end */
+
+
+/* Douban video */
+
+.video-main .section-title a:hover {
+    background: inherit;
+}
+
+.video-main li {
+    width: 250px;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.video-main li:nth-child(3n) {
+    margin: 0;
+}
+
+.video-main li a:hover {
+    background: inherit;
+}
+
+.video-main li .img {
+    position: relative;
+}
+
+.video-main li .img::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    line-height: 144px;
+    font-size: 30px;
+}
+
+/* Douban video end */
+
+/* Douban movie */
+
+.movie-part .right-menu-list li {
+    width: 48px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.order-movie-list {
+    font-size: 12px;
+}
+
+.order-movie-list li {
+    list-style: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 6px;
+}
+
+.order-movie-list li a {
+    margin-left: 5px;
+}
+
+.movie-part .item-list li {
+    width: 100px;
+    margin-right: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.movie-part .item-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.movie-part .item-list li img {
+    width: 100%;
+}
+
+.movie-part .item-list li .words {
+    margin: 10px 0 4px 0;
+}
+
+.movie-part .item-list li .words a {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-part .item-list li .words .func-btn {
+    margin-top: 7px;
+}
+
+.movie-part .item-list li .words .func-btn .block-link {
+    background: #1c8bd0;
+    color: #fff;
+}
+
+.movie-part .item-list li .words .func-btn .block-link:hover {
+    background: #047acb;
+}
+
+/* Douban movie end */
+
+/* Group */
+
+.group-part .aside-left .left-menu a {
+    color: #007982;
+}
+
+.group-part .aside-left .left-menu a:hover {
+    color: #fff;
+}
+
+.group-part .aside-left .left-menu a:active {
+    color: #fff;
+}
+
+.group-part .group .group-name a:hover {
+    color: #fff;
+}
+
+
+.group-part .main .item-list {
+    text-align: justify;
+}
+
+/* clearfix the last */
+.group-part .main .item-list::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.group-part .main .item-list li {
+    width: 248px;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.group-part .main .item-list li .img {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.group-part .main .item-list li .words {
+    /* make it a bfc which avoiding the float box*/
+    overflow: hidden;
+}
+
+.group-part .main .item-list li .words span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Group end */
+
+/* Book */
+
+.book-part a {
+    color: #494949;
+}
+
+.book-part a:hover, .book-part a:active {
+    color: #fff;
+}
+
+.book-part .right-menu-list li {
+    margin-right: 10px;
+}
+
+.book-part .right-menu-list li span {
+    color: #999;
+}
+
+.book-part .right-menu-list li span::before {
+    content: "[";
+}
+
+.book-part .right-menu-list li span::after {
+    content: "]";
+}
+
+.book-part .group {
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+}
+
+.book-part .group:last-child {
+    border-bottom: none;
+}
+
+.book-part .item-list li {
+    width: 100px;
+    margin-right: 38px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.book-part .item-list li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.book-part .item-list li .words {
+    margin-top: 15px;
+}
+
+.book-part .item-list li .words span {
+    display: block;
+    font-size: 12px;
+    color: #111;
+    margin-top: 8px;
+}
+
+.book-part .item-list li .func .block-link {
+    background: #999a95;
+}
+
+.book-part .item-list li .func .block-link:hover {
+    background: #878882;
+}
+
+/* Book end */
+
+/* Music */
+
+.music-part a {
+    color: #555d53;
+}
+
+.music-part a:hover, .music-part a:active {
+    color: #fff;
+}
+
+.music-part .aside-left .title a {
+    color: #f38c80;
+}
+
+.music-part .aside-left .title a:hover, .music-part .aside-left .title a:active {
+    color: #fff;
+}
+
+/* Music end */
+
+/* Musician */
+
+.music-part .musician-list li {
+    margin-bottom: 10px;
+}
+
+.music-part .musician-list li .num {
+    font-size: 12px;
+    color: #111;
+}
+
+.music-part .musician-list li .musician {
+    width: 240px;
+}
+
+.music-part .musician-list li .musician .img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+/* avoid white space border */
+.music-part .musician-list li .musician .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.music-part .musician-list li .musician .img::before {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+}
+
+.music-part .musician-list li .musician .img:hover::before {
+    display: block;
+}
+
+.music-part .musician-list li .words {
+    width: 180px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.music-part .musician-list li .words span {
+    color: #999;
+    display: block;
+    line-height: 1.5;
+}
+
+.music-part .item-list li {
+    width: 130px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.music-part .item-list li .img {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.music-part .item-list li .words {
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+/* Musician end */
+
+/* Douban product */
+
+.product-part .aside-left a {
+    color: #1f9432;
+}
+
+.product-part .aside-left a:hover, .product-part .aside-left a:active {
+    color: #fff;
+}
+
+.product-part .aside-right {
+    font-size: 14px;
+} 
+
+.product-part .aside-right .group-topic {
+    font-size: 14px;
+}
+
+.product-part .aside-right .group-topic li {
+    width: 265px;
+    margin-bottom: 10px;
+}
+
+.product-part .aside-right .group-topic .group-topic-footer {
+    color: #999;
+    font-size: 12px;
+    margin-top: 14px;
+    margin-bottom: 3px;
+}
+
+.product-part .main .item-list li {
+    width: 240px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.product-part .main .item-list li .words {
+    margin-top: 10px;
+}
+
+.product-part .main .item-list li .words span {
+    color: #e55457;
+}
+
+/* Douban product end*/
+
+
+/* Same city */
+
+.city-part a {
+    color: #643;
+}
+
+.city-part a:hover, .city-part a:active {
+    color: #fff;
+}
+
+.city-part .aside-left .title a {
+    color: #ec5303;
+}
+
+.city-part .aside-left .title a:hover, .city-part .aside-left .title a:active {
+    color: #fff;
+}
+
+.city-part .main .item-list li {
+    width: 248px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.city-part .main .item-list li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.city-part .main .item-list li .img {
+    margin-right: 10px;
+}
+
+.city-part .main .item-list li .words {
+    /* BFC */
+    overflow: hidden;
+}
+
+.city-part .main .item-list li .words a {
+    font-size: 13px;
+}
+
+.city-part .main .item-list li .words span {
+    font-size: 12px;
+    display: block;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Same city end */
+
+/* Footer */
+
+.footer {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer p {
+    color: #999;
+}
+
+.footer .container {
+    border-top: 1px dotted #dcdcdc;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.footer .left img {
+    width: 15px;
+    vertical-align: middle;
+}
+
+.footer .left, .footer .right {
+    width: 50%;
+}
+
+.footer .left .links a::after {
+    content: " |";
+}
+
+.footer .left .links a:last-child::after {
+    content: "";
+}
+
+.footer .right .links a::after {
+    content: " ·";
+}
+
+.footer .right .links a:last-child::after {
+    content: "";
+}
+
+/* Footer end */
