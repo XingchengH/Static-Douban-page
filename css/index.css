@@ -437,6 +437,7 @@ ul {
 }
 
 .hot-list li {
+    display: block;
     margin-bottom: 15px;
 }
 
